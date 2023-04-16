@@ -30,3 +30,5 @@ El código se divide en dos bucles `while`.
 El primer bucle se ejecuta dos veces y comprueba si ha habido un apagón del sistema. Si ha habido un apagón, envía una notificación a través de la API de Pushbullet con el tiempo que ha estado apagado el sistema. Después de enviar la notificación, el contador se incrementa en uno y se espera 60 segundos antes de enviar otra notificación. Esto se hace dos veces para enviar dos notificaciones.
 
 El segundo bucle se ejecuta continuamente y escribe la hora de inicio del sistema actual en el archivo `/home/alex/boot-time.txt` cada 60 segundos.
+
+Lo ideal es ponerlo en el cron y que solo se inicie una vez al bootea.
